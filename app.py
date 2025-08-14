@@ -6,7 +6,7 @@ import numpy as np
 st.title("Predictor de Éxito Académico")
 
 # Autor
-st.subheader("Autor: Adriana Ramos")
+st.subheader("Autor: Adriana Ramos Vilchis")
 
 # Imagen debajo del autor
 st.image("https://buscacarrera.com.co/public/content/articulos/la-clave-del-exito-academico-como-crear-un-plan-de-estudio-efectivo.jpg")
@@ -32,8 +32,9 @@ prediction = model.predict(input_data)
 if prediction == 0:
     st.markdown('<h2 style="color:red;">❌ No se graduará</h2>', unsafe_allow_html=True)
 else:
-    st.markdown('<h2 style="color:green;">🎉 Felicitaciones, te vas a graduar con honores</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color:green;">🎉 Felicitaciones, te vas a graduar</h2>', unsafe_allow_html=True)
 
 # Pie de página
 st.write("© 2025 UNAB")
+
 
